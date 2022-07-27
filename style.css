@@ -1,9 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font: inherit;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   height: 100px;
   width: 130px;
@@ -33,9 +37,10 @@
   color: white;
 }
 
+/* Home */
+
 .mainsection {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
   height: 100vh;
@@ -49,7 +54,7 @@
   align-items: center;
   border: 2px solid;
   border-radius: 5px;
-  width: 50rem;
+  width: 40rem;
   height: 450px;
 }
 
@@ -82,7 +87,7 @@
   display: flex;
   margin-top: 7rem;
   padding-top: 5px;
-  width: 700px;
+  width: 500px;
   height: 450px;
 }
 
@@ -91,22 +96,35 @@
   height: 100%;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-  background-color: rgb(122 147 191);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+@media (max-width: 1150px) {
+  .mainsection {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainsection__contenedor2 {
+    margin: 1rem 0px;
+  }
 
-.footer-title {
-  font-style: bold;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  @media (max-width: 650px) {
+    .mainsection__contenedor {
+      width: auto;
+      margin: 0.5rem;
+    }
+
+    .mainsection__contenedor__titulo {
+      font-size: 3rem;
+    }
+    .mainsection__contenedor__parrafo {
+      font-size: 1rem;
+    }
+
+    .mainsection__contenedor2 {
+      width: 80%;
+      height: auto;
+    }
+  }
 }
 
 /* profile */
@@ -171,45 +189,115 @@
 
 .profile__container3__imagen {
   width: 100%;
-  height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    align-items: center;
+  }
+
+  .profile__container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .profile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile__container__epigrafe {
+    font-size: 12px;
+  }
+  .profile__container__titulo {
+    font-size: 3rem;
+  }
+  .profile__container__parrafo {
+    height: auto;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+  }
+
+  .profile__container2__likes__title {
+    font-size: 1.6rem;
+  }
+
+  .profile__container2__likes__list {
+    font-size: 13px;
+  }
+
+  .profile__container2__dislikes__title {
+    font-size: 1.6rem;
+  }
+
+  .profile__container2__dislikes__list {
+    font-size: 13px;
+  }
+
+  .profile__container2 {
+    margin: 1rem 1rem;
+    width: 70%;
+  }
+
+  .profile__container3 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* experience */
 
 .experience {
-  height: 100vh;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .experience__container {
+  text-align: center;
   margin-top: 5rem;
   margin-bottom: 3rem;
-  align-self: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Rubik", sans-serif;
 }
 
 .experience__container__title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .experience__container__text {
-  margin-left: 7rem;
+  font-size: 1.7rem;
 }
 
 .experience__container2 {
   margin: 5rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   font-family: "Rubik", sans-serif;
 }
 
 .experience__container2__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 200px;
+  height: auto;
   padding: 1rem;
   border: 1px solid;
   border-radius: 0.5rem;
@@ -223,6 +311,36 @@
 .logo__card {
   height: 2rem;
   width: 2.3rem;
+}
+
+@media (max-width: 912px) {
+  .experience {
+    height: auto;
+  }
+
+  .experience__container__title {
+    font-size: 3.4rem;
+  }
+  .experience__container__text {
+    font-size: 1.2rem;
+  }
+
+  .experience__container2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .experience__container__title {
+    font-size: 2rem;
+  }
+
+  .experience__container2 {
+    margin: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 /* projects */
@@ -256,6 +374,43 @@
 .projects__container2__imagen {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .projects__container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects__container1__title {
+    font-size: 2.6rem;
+  }
+
+  .projects__container1__text {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+  }
+
+  .projects__container2 {
+    width: 80%;
+    height: auto;
+  }
 }
 
 /* contact */
@@ -306,4 +461,60 @@
 
 .submit {
   padding: 1rem;
+}
+
+@media (max-width: 1150px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .contact__container1 {
+    padding-bottom: 5rem;
+    height: auto;
+  }
+
+  .contact__form__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact {
+    height: 1000px;
+  }
+  .contact__container1 {
+    width: 80%;
+  }
+  .contact__container2 {
+    width: 90%;
+  }
+
+  .contact__form__title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(122 147 191);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+}
+
+.footer-title {
+  font-style: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
