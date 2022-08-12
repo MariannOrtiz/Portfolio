@@ -296,7 +296,7 @@ html {
 /* experience */
 
 .experience {
-  height: auto;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -349,9 +349,8 @@ html {
   font-weight: bold;
 }
 
-.logo__card {
-  height: 2rem;
-  width: 2.3rem;
+.fa-brands {
+  font-size: 5rem;
 }
 
 @media (max-width: 912px) {
