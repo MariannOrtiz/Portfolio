@@ -1,0 +1,46 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+
+  &__container1 {
+    width: 500px;
+    height: 400px;
+
+    &__imagen {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.contact__container2 {
+  width: 30rem;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-size: 2.2rem;
+      font-family: "Rubik", sans-serif;
+    }
+  }
+}
+
+.mail {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.phone {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  padding: 1rem;
+}
