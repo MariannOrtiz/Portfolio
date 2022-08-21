@@ -8,3 +8,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: $bg-principal;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+body::-webkit-scrollbar-track {
+  background: $bg-principal;
+}
+body::-webkit-scrollbar-thumb {
+  background: #696969;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}

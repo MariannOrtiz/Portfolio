@@ -1,6 +1,10 @@
+@mixin size($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
 .projects {
-  width: 100%;
-  height: 100vh;
+  @include size(100%, 100vh);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -20,12 +24,9 @@
     }
   }
   &__container2 {
-    width: 500px;
-    height: 300px;
-
+    @include size(500px, 300px);
     &__imagen {
-      width: 100%;
-      height: 100%;
+      @include size(100%, 100%);
     }
   }
 }
@@ -54,15 +55,13 @@
     &__text {
       display: flex;
       align-items: center;
-      height: auto;
-      width: 80%;
+      @include size(80%, auto);
       font-size: 1rem;
       margin-top: 0.4rem;
     }
   }
 
   .projects__container2 {
-    width: 80%;
-    height: auto;
+    @include size(80%, auto);
   }
 }

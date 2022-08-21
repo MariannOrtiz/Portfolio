@@ -4,20 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de desrollador frontend" />
+    <meta name="keyword" content="Portfolio, argentina, desarrollo web, diseño grafico, Mariano Ortiz, MarianOrtiz" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css1/main.css" />
+    <link rel="stylesheet" href="css1/main.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
     <title>Principal</title>
   </head>
   <body>
 
     <div class="container-fluid nav-custom">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(122 147 191); font-family: 'Times New Roman', Times, serif;">
+      <nav class="navbar navbar-expand-lg navbar-light" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./images/m-logo.png" alt="" width="110" height="80"></a>
           <button class="navbar-toggler" type="button" 
@@ -54,21 +76,22 @@
       </div>
 
     <section class="mainsection">
-      <div class="mainsection__contenedor">
-        <h1 class="mainsection__contenedor__titulo">Welcome!</h1>
-        <p class="mainsection__contenedor__parrafo">
-          Welcome to my portfolio, i'm Mariano and i'm about to show you my
-          work, my experience, my likes and dislikes, every project i made and
-          where you can contact me if you want to work with me
-        </p>
+      <div class="mainsection__container1">
+        <img class="mainsection__container1__square" src="./images/square.jpg" alt="">
       </div>
-      <div class="mainsection__contenedor2">
-        <img
-          class="mainsection__contenedor2__imagen"
-          src="images/program.png"
-          alt=""
-        />
-      </div>
+      <div class="container  mainsection__container2">
+          <h1 class="mainsection__container2__text " data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">WELCOME TO MY  PORTFOLIO</h1>
+
+          <span class="mainsection__container2__figure1">./</span>
+          <span class="mainsection__container2__figure2">&lt/&gt</span>
+          <span class="mainsection__container2__figure3">&lth1&gt</span>
+          <span class="mainsection__container2__figure4">&lt/h1&gt</span>
+          <span class="mainsection__container2__figure5">&</span>
+          <span class="mainsection__container2__figure6">{}</span>
+          <span class="mainsection__container2__figure7">cmd</span>
+          <span class="mainsection__container2__figure8">;</span>
+        </div>
     </section>
 
     <footer class="footer">
@@ -76,5 +99,9 @@
       <p class="footer__text">todos los derechos reservados</p>
     </footer>
     <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
