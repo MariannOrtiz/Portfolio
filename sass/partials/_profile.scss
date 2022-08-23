@@ -1,125 +1,126 @@
 .profile {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 8rem;
-
-  &__container {
-    width: 35rem;
-
-    &__epigrafe {
-      color: #777777;
-      font-family: "Rubik", sans-serif;
-    }
-
-    &__titulo {
-      font-size: 4.3rem;
-      font-family: "Rubik", sans-serif;
-    }
-    &__parrafo {
-      font-family: "Rubik", sans-serif;
-      color: #777777;
-      font-size: 1.15rem;
-    }
-  }
-  &__container2 {
-    font-family: "Rubik", sans-serif;
-    margin-top: 4rem;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8rem;
 
-    &__likes {
-      border: 1px solid;
+    &__container {
+        width: 35rem;
 
-      &__title {
-        font-size: 2.3rem;
-      }
-      &__list {
+        &__epigrafe {
+            color: #777777;
+            font-family: "Rubik", sans-serif;
+        }
+
+        &__titulo {
+            font-size: 4.3rem;
+            font-family: "Rubik", sans-serif;
+        }
+        &__parrafo {
+            font-family: "Rubik", sans-serif;
+            color: #777777;
+            font-size: 1.15rem;
+        }
+    }
+    &__container2 {
+        font-family: "Rubik", sans-serif;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
         text-align: center;
-        list-style: none;
-      }
-    }
+        &__likes {
+            border: 1px solid;
 
-    &__dislikes {
-      border: 1px solid;
-      &__title {
-        font-size: 2.3rem;
-      }
+            &__title {
+                font-size: 2.3rem;
+            }
+            &__list {
+                padding: 0rem 2rem;
 
-      &__list {
-        list-style: none;
-        text-align: center;
-      }
-    }
-  }
-  &__container3 {
-    width: 500px;
-    height: 400px;
+                list-style: none;
+            }
+        }
 
-    &__imagen {
-      width: 100%;
+        &__dislikes {
+            border: 1px solid;
+            &__title {
+                font-size: 2.3rem;
+            }
+
+            &__list {
+                list-style: none;
+                padding: 0rem 2rem;
+            }
+        }
     }
-  }
+    &__container3 {
+        width: 500px;
+        height: 400px;
+
+        &__imagen {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 1150px) {
-  .profile {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
-    align-items: center;
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        align-items: center;
 
-    &__container {
-      text-align: center;
+        &__container {
+            text-align: center;
+        }
     }
-  }
 }
 
 @media (max-width: 590px) {
-  .profile__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    .profile__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
-    &__epigrafe {
-      font-size: 12px;
-    }
-    &__titulo {
-      font-size: 3rem;
-    }
-    &__parrafo {
-      height: auto;
-      width: 80%;
-      font-size: 1rem;
-      margin-top: 0.4rem;
-    }
-  }
-
-  .profile__container2 {
-    margin: 1rem 1rem;
-    width: 70%;
-
-    &__likes__title {
-      font-size: 1.6rem;
+        &__epigrafe {
+            font-size: 12px;
+        }
+        &__titulo {
+            font-size: 3rem;
+        }
+        &__parrafo {
+            height: auto;
+            width: 80%;
+            font-size: 1rem;
+            margin-top: 0.4rem;
+        }
     }
 
-    &__likes__list {
-      font-size: 13px;
+    .profile__container2 {
+        margin: 1rem 1rem;
+        width: 70%;
+
+        &__likes__title {
+            font-size: 1.6rem;
+        }
+
+        &__likes__list {
+            font-size: 13px;
+        }
+
+        &__dislikes__title {
+            font-size: 1.6rem;
+        }
+
+        &__dislikes__list {
+            font-size: 13px;
+        }
     }
 
-    &__dislikes__title {
-      font-size: 1.6rem;
+    .profile__container3 {
+        width: 100%;
+        height: auto;
     }
-
-    &__dislikes__list {
-      font-size: 13px;
-    }
-  }
-
-  .profile__container3 {
-    width: 100%;
-    height: auto;
-  }
 }
