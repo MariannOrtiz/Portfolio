@@ -1,46 +1,100 @@
 .contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 8rem;
-
-  &__container1 {
-    width: 500px;
-    height: 400px;
-
-    &__imagen {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-.contact__container2 {
-  width: 30rem;
-
-  &__form {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-
-    &__title {
-      font-size: 2.2rem;
-      font-family: "Rubik", sans-serif;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    &__container1 {
+        width: 600px;
+        height: 450px;
+        padding-bottom: 2rem;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
-  }
+    &__container2 {
+        width: 30rem;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+
+            &__title {
+                font-size: 3rem;
+                font-family: "nofex";
+            }
+        }
+    }
 }
 
 .mail {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "primeform-medium";
 }
 
 .phone {
-  padding: 1rem;
-  margin-bottom: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: "primeform-medium";
 }
 
 .submit {
-  padding: 1rem;
+    padding: 1rem;
+    font-family: "primeform-medium";
+}
+
+@media (max-width: 1440px) {
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+
+        &__container2 {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .contact {
+        align-items: center;
+    }
+    .contact__container1 {
+        width: 80%;
+        height: 500px;
+    }
+    .contact__container2 {
+        margin: 0;
+        width: 80%;
+        height: 200px;
+    }
+    .contact__container2__form__title {
+        font-size: 2rem;
+        font-family: "nofex";
+    }
+    .submit {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 360px) {
+    .contact__container1 {
+        width: 80%;
+        height: 200px;
+    }
+    .contact__container2 {
+        margin: 0;
+        width: 80%;
+        height: 200px;
+    }
+    .contact__container2__form__title {
+        font-size: 1.5rem;
+    }
+    .submit {
+        margin-bottom: 1rem;
+    }
 }

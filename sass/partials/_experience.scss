@@ -1,85 +1,98 @@
 .experience {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  &__container {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-family: "Rubik", sans-serif;
 
-    &__title {
-      font-size: 4rem;
-      font-weight: bold;
+    &__container {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            font-family: "nofex";
+            font-size: 3rem;
+        }
+
+        &__text {
+            font-family: "primeform-medium";
+            font-size: 1.8rem;
+        }
     }
+    &__container2 {
+        margin: 5rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        font-family: "primeform-bold";
 
-    &__text {
-      font-size: 1.7rem;
+        &__card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: 200px;
+            height: auto;
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 0.5rem;
+
+            &__title {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
     }
-  }
-  &__container2 {
-    margin: 5rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    font-family: "Rubik", sans-serif;
-
-    &__card {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      min-width: 200px;
-      height: auto;
-      padding: 1rem;
-      border: 1px solid;
-      border-radius: 0.5rem;
-
-      &__title {
-        font-size: 1.3rem;
-        font-weight: bold;
-      }
-    }
-  }
 }
 
 .fa-brands {
-  font-size: 5rem;
+    font-size: 5rem;
 }
 
 @media (max-width: 912px) {
-  .experience {
-    height: auto;
+    .experience {
+        height: auto;
 
-    &__container__title {
-      font-size: 3.4rem;
+        &__container__title {
+            font-size: 3.4rem;
+        }
+        &__container__text {
+            font-size: 1.2rem;
+        }
+        &__container2 {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
     }
-    &__container__text {
-      font-size: 1.2rem;
-    }
-    &__container2 {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-    }
-  }
 }
 
 @media (max-width: 480px) {
-  .experience__container__title {
-    font-size: 2rem;
-  }
+    .experience__container__title {
+        font-size: 2rem;
+    }
 
-  .experience__container2 {
-    margin: 0.5rem;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
+    .experience__container2 {
+        margin: 0.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .fa-brands {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .experience__container__title {
+        font-size: 1.5rem;
+    }
+    .experience__container__text {
+        font-size: 0.8rem;
+    }
 }
