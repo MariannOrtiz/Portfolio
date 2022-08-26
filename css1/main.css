@@ -345,45 +345,6 @@ body::-webkit-scrollbar-thumb:hover {
       bottom: 13rem;
       left: 8rem; } }
 
-/* @media (max-width: 565px) {
-  .mainsection__container1__square {
-    width: 200px;
-    height: 270px;
-  }
-  .mainsection__container2 {
-    width: 400px;
-    &__text {
-      padding-right: 5rem;
-      font-size: 2.4rem;
-    }
-    &__text::after {
-      font-size: 0.9rem;
-      right: 6rem;
-      top: 3.4rem;
-    }
-    &__figure3 {
-      bottom: 9.1rem;
-      right: 4.7rem;
-    }
-    &__figure4 {
-      bottom: 3.2rem;
-      left: 11.6rem;
-    }
-    &__figure6 {
-      top: 3rem;
-      left: 6rem;
-    }
-    &__figure7 {
-      bottom: 6rem;
-      left: 4rem;
-    }
-    &__figure8 {
-      bottom: 11rem;
-      left: 3rem;
-    }
-  }
-
-} */
 @media (max-width: 565px) {
   .mainsection__container1__square {
     width: 200px;
