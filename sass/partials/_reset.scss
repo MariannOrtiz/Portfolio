@@ -1,27 +1,31 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  font: inherit;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: $bg-principal;
+    background-color: $bg-principal;
 }
 
 body::-webkit-scrollbar {
-  width: 0.7rem;
+    width: 0.7rem;
 }
 body::-webkit-scrollbar-track {
-  background: $bg-principal;
+    background: $bg-principal;
 }
 body::-webkit-scrollbar-thumb {
-  background: #696969;
+    background: #696969;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: $primary-color;
+    background: $primary-color;
 }

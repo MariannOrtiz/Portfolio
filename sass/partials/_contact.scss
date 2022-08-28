@@ -14,6 +14,7 @@
         }
     }
     &__container2 {
+        height: 30rem;
         width: 30rem;
 
         &__form {
@@ -54,8 +55,23 @@
         align-items: center;
         margin-top: 0;
 
+        &__container1 {
+            padding-top: 2rem;
+        }
+
         &__container2 {
+            display: flex;
+            justify-content: center;
             align-items: center;
+            width: 50%;
+
+            &__form {
+                width: 100%;
+
+                &__title {
+                    font-size: 2.5rem;
+                }
+            }
         }
     }
 }
@@ -63,19 +79,19 @@
 @media (max-width: 660px) {
     .contact {
         align-items: center;
+        height: auto;
     }
     .contact__container1 {
+        margin-top: 2rem;
         width: 80%;
-        height: 500px;
+        height: 20rem;
     }
     .contact__container2 {
         margin: 0;
         width: 80%;
-        height: 200px;
     }
     .contact__container2__form__title {
         font-size: 2rem;
-        font-family: "nofex";
     }
     .submit {
         margin-bottom: 1rem;
@@ -84,12 +100,10 @@
 @media (max-width: 360px) {
     .contact__container1 {
         width: 80%;
-        height: 200px;
     }
     .contact__container2 {
         margin: 0;
         width: 80%;
-        height: 200px;
     }
     .contact__container2__form__title {
         font-size: 1.5rem;
